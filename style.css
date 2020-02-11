@@ -36,5 +36,10 @@
                 #big {
                     font-size: 1.5em;
                 }
+                #colorchange {
+                    background-color: lightseagreen ;
+                    min-height: 300px;
+                    padding-top: 35px;
+                }
 
         
