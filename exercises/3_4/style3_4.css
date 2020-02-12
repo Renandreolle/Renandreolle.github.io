@@ -1,0 +1,25 @@
+#sidebar {
+    float: right;
+    max-width: 30%;
+    text-align: justify;
+    margin-right: 20%;
+}
+#articles {
+    float: left;
+    max-width: 60%;
+}
+#foot {
+    clear: both;
+    text-align: center;
+}
+#PrincipalImg {
+    width: 50%;
+    border-style: double;
+    border-color: ivory ;
+}
+body {
+    background: linear-gradient(lightblue,mediumblue);
+}
+.centered {
+    text-align: center;
+}
