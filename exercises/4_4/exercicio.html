@@ -56,7 +56,15 @@
         */
         document.getElementsByTagName("p")[0].innerHTML = "Feliz";
         document.getElementsByClassName("main-content")[0].style.backgroundColor = "#0FA36B";
-        document.getElementsByClassName("main-content")[0].style.backgroundColor = "#ffffff";
+        document.getElementsByClassName("center-content")[0].style.backgroundColor = "#ffffff";
+        document.getElementsByTagName("h1")[0].innerHTML = "Exercício 4.4 - Javascript";
+        for (let i in document.getElementsByTagName("p")){
+            console.log(document.getElementsByTagName("p")[i].style.textTransform="uppercase")
+        }                     
+
+        for (let i in document.getElementsByTagName("p")){
+            console.log(document.getElementsByTagName("p")[i].innerText)
+        }                     
 
     </script>
 </body>
