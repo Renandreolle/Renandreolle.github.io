@@ -63,7 +63,34 @@
       let divmain = document.createElement("div");
       divmain.className="main-content"; 
       document.querySelector("body").appendChild(divmain);  
-
-    </script>
+      let divcenter= document.createElement("div");
+      divcenter.className="center-content";
+      document.querySelector("div.main-content").appendChild(divcenter); 
+      let p=document.createElement("p");
+      p.innerHTML="Algum texto";
+      document.querySelector("div.center-content").appendChild(p);  
+      let divleft= document.createElement("div");
+      divleft.className="left-content";
+      document.querySelector("div.main-content").appendChild(divleft); 
+      let divright= document.createElement("div");
+      divright.className="right-content";
+      document.querySelector("div.main-content").appendChild(divright); 
+      let img=document.createElement("img");
+      img.src="https://picsum.photos/200";
+      img.className="small-image";  
+      document.querySelector("div.left-content").appendChild(img);  
+      let list=document.createElement("ul");
+      list.innerHTML="<li>um</li><li>dois</li><li>tres</li><li>quatro</li><li>cinco</li><li>seis</li><li>sete</li><li>oito</li><li>nove</li><li>dez</li>";
+        document.querySelector("div.right-content").appendChild(list);  
+        let h31=document.createElement("h3");
+        let h32=document.createElement("h3");
+        let h33=document.createElement("h3");
+        h31.innerHTML="h31";
+        h32.innerHTML="h32";
+        h33.innerHTML="h33";
+        document.querySelector("div.main-content").appendChild(h31);
+        document.querySelector("div.main-content").appendChild(h32);
+        document.querySelector("div.main-content").appendChild(h33);
+    </script>       
   </body>
 </html>
