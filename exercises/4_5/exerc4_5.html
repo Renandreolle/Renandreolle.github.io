@@ -80,7 +80,13 @@
       img.className="small-image";  
       document.querySelector("div.left-content").appendChild(img);  
       let list=document.createElement("ul");
-      list.innerHTML="<li>um</li><li>dois</li><li>tres</li><li>quatro</li><li>cinco</li><li>seis</li><li>sete</li><li>oito</li><li>nove</li><li>dez</li>";
+      let array=["um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez"];
+      let li=[];
+      for (let i in array){
+        li[i]=document.createElement("li");
+        li[i].innerHTML=array[i];
+        list.appendChild(li[i]);  
+      }
         document.querySelector("div.right-content").appendChild(list);  
         let h31=document.createElement("h3");
         let h32=document.createElement("h3");
@@ -91,6 +97,16 @@
         document.querySelector("div.main-content").appendChild(h31);
         document.querySelector("div.main-content").appendChild(h32);
         document.querySelector("div.main-content").appendChild(h33);
+        //Segunda Parte
+        h1.className="title";
+        h31.className="description";
+        h32.className="description";
+        h33.className="description";    
+        document.querySelector("div.main-content").removeChild(divleft);  
+        divright.style.marginRight="auto";
+        divcenter.style.backgroundColor="green";
+        list.removeChild(li[array.length-1]);
+        list.removeChild(li[array.length-2]);    
     </script>       
   </body>
-</html>
+</html> 
